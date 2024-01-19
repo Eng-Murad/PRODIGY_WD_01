@@ -1,95 +1,94 @@
-body {
-  margin: 0;
-  padding: 0;
+body, html {
+  height: 70%;
+  margin: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
-nav {
+body main {
+  border: 2px solid black; 
+  width: 400px;
+  height: 400px;
+  background-color: #d3bdbd;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #cccccc;
-  /* z-index: 100; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  z-index: 1000;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+header nav ul {
   display: flex;
-  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-  margin: 0 20px;
+header nav ul li {
+  margin: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-nav a {
+header nav ul li a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
   transition: color 0.3s;
 }
-
-nav a:hover {
-  color: #ff0000;
+header nav ul li a:hover{
+  background-color: greenyellow;
+  color: whitesmoke;
 }
 
-.content {
-  height: 1 00px; /* Just for demonstration */
+#navbar {
+  width: 416px;
+  background-color: #c2afaf;
+  border: 2px solid black; 
 }
 
-body {
-  background-color: rgb(223, 236, 241);
-  border: 2px solid red;
-  padding: 20px;
-  margin: 10px;
+#food-menu {
+  height: 400px;
+  width: 400px; /* Set the height for scrollability */
+  overflow-y: auto;   /* Enable vertical scrolling */
+  position: relative; /* Add this line */
+  z-index: 0; /* Add this line */
 }
 
-h1 {
-  color: rgb(242, 17, 17);
-  text-align: center;
+#food-menu ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
 }
 
-h1:hover {
-  color: black;
+#food-menu li {
+  margin-bottom: 10px; /* Add margin between items */
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-  text-align: center;
-  
+#food-menu li div {
+  background-color: #d3bdbd; /* Set background color for the boxes */
+  border: 1px solid #4b4949; /* Add border to the boxes */
+  padding: 15px;
+  width: 350px; 
 }
 
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: white;
-  padding: 10px;
+#food-menu div:hover {
+  background-color: greenyellow;
+  transform: scale(0.9);
 }
 
-th, td {
-  padding: 8px;
+#food-menu-title {
   text-align: left;
-  border: 1px solid #ddd;
 }
-
-tr:hover {
-  background-color: coral;
-}
-
-img {
-  border-radius: 30%;
-  width: 300px;
-  justify-items: center;
-  margin-top: 20px;
+header #navbar {
   margin-bottom: 20px;
 }
 
-.info p {
-  background-color: white;
-  font-size: 18px;
-  font-weight: 400;
-}
